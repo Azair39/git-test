@@ -4,6 +4,13 @@ public class Calculate{
 		int a = Integer.valueOf(args[0]);
 		int b = Integer.valueOf(args[2]);
 		String s = args[1];
+		float answer = Calculation(Integer.valueOf(args[0]), args[1], Integer.valueOf(args[2]));
+		System.out.println("Result = " + answer);
+		System.out.println("Done!");
+	}
+	
+	private static float Calculation(int a; String s; int b)
+	{
 		float res = 0;
 		System.out.println(a + " " + s + " "+ b);
 		System.out.println("Calculating...");
@@ -25,7 +32,6 @@ public class Calculate{
 				res = 0;	
 				break;
 		}		
-		System.out.println("Result = " + res);
-		System.out.println("Done!");
+		return res;
 	}
 }
